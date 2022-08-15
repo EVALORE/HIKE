@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="shortcut icon" href="img/icons/!k.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cart container">
+        <div class="cart__column">
+            <div class="cart__item">
+                <div class="cart__img">
+                    <img src="img/mini-img.png" alt="">
+                </div>
+                <div class="item__information">
+                    <div class="item__row">
+                        <p class="item__title">Rover Pack Classic</p>
+                        <div class="item__delete">
+                            <img src="img/icons/Delete.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item__row">
+                        <p class="item__price">2073mdl</p>
+                        <div class="item__quantity">
+                            <img src="img/icons/add.svg" alt="" class="item__add">
+                            <span class="item__sum">2</span>
+                            <img src="img/icons/remove.svg" alt="" class="item__reduce">
+                        </div>
+                        <p class="item__total">4146mdl</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__total">
+                <span class="total__title">Итого</span>
+                <p class="total__price">4146mdl</p>
+            </div>
+        </div>
+        <div class="cart__column">
+            <div class="cart__form">
+                <div class="cart__inner">
+                    <div class="form__item">
+                        <input id="formName" type="text" name="name" class="form__input cart__input" placeholder=" ">
+                        <label for="formEmail" class="form__label">Имя Фамилия</label>
+                    </div>
+                    <div class="form__item">
+                        <input id="formEmail" type="text" name="email" class="form__input cart__input" placeholder=" ">
+                        <label for="formEmail" class="form__label">Почта</label>
+                    </div>
+                    <div class="form__item">
+                        <input id="formEmail" type="text" name="address" class="form__input cart__input" placeholder=" ">
+                        <label for="formEmail" class="form__label">Адрес доставки</label>
+                    </div>
+                    <div class="form__item">
+                        <input id="formEmail" type="text" name="tel" class="form__input cart__input" placeholder=" ">
+                        <label for="formEmail" class="form__label">Номер телефона</label>
+                    </div>
+                    <div class="form__radio">
+                        <p class="radio__title">Способ оплаты</p>
+                        <div class="form__inner">
+                            <input type="radio" name="brandtype" id="1" class="radio__input" value="64gb" checked>
+                            <label for="1" class="radio__label radio__label-1">
+                                Наличными
+                            </label>
+                            <input type="radio" name="brandtype" id="2" class="radio__input" value="64gb">
+                            <label for="2" class="radio__label radio__label-2">
+                                Карты
+                            </label>
+                        </div>
+                    </div>
+                    <button class="form__button cart__button">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="generateHeader.js" defer></script>
+    <script src="generateFooter.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
