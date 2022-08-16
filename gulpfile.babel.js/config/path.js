@@ -42,7 +42,7 @@ export default {
     },
 
     font: {
-        src: pathSrc + "/font/*.{ttf,eot,otf,ttc,woff,woff,svg,otc}",
+        src: pathSrc + "/font/**/*.{ttf,eot,otf,ttc,woff,woff,svg,otc}",
         watch: pathSrc + "/font/**/*.{ttf,eot,otf,ttc,woff,woff,svg, otc}",
         dest: pathDest + "/font"
     }
