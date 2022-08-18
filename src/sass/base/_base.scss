@@ -24,10 +24,15 @@ body{
 //! Настройка контейнера
 
 [class*="__container"] {
-    max-width: calc(60px + 1230px);
+    max-width: calc(var.$container-safe * 2 + var.$container);
     overflow: hidden; 
     margin: 0 auto;
     padding: 0 30px;
+}
+
+svg {
+    height: 24px;
+    width: 24px;
 }
 
 //? PC    =======================================================================================

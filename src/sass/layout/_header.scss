@@ -1,0 +1,40 @@
+.header {
+
+    & {
+        margin: 20px 0px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 42px;
+    }
+
+    .action {
+        display: block;
+    }
+}
+.menu {
+
+    & {
+        display: flex;
+        gap: 60px;
+    }
+
+    &__item {
+        transition: transform 0.3s ease;
+    }
+
+    &__item:hover {
+        // transform: translateY(-2px);
+        transform: scale(107%);
+    }
+
+    &__link {
+    }
+}
