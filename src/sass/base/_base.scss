@@ -5,6 +5,8 @@
 //! Общие Настройки
 body{
     @extend .text;
+    background: var.$white;
+    color: var.$black;
 }
 
 // =============================================================================================
@@ -25,14 +27,14 @@ body{
 
 [class*="__container"] {
     max-width: calc(var.$container-safe * 2 + var.$container);
-    overflow: hidden; 
+    // overflow: hidden;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 var.$container-safe;
 }
 
-svg {
-    height: 24px;
-    width: 24px;
+svg{
+    height: var.$icon-size;
+    width: var.$icon-size;
 }
 
 //? PC    =======================================================================================

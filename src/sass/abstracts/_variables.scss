@@ -2,16 +2,24 @@
 $accent: rgb(195, 7, 13);
 $blue: rgb(66, 103, 178);
 $red: rgb(219, 68, 55);
-$black: rgb(0, 0, 0);
 $active: rgba(255, 255, 255, 0.5);
 $gray: rgba(255, 255, 255, 0.2);
+
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
 
 // size
 $container: 1300px;
 $container-safe:15px;
+$icon-size: 24px;
 
 // media
 $mobile-small: 479.98px;
 $mobile: 767.98px;
 $tablet:991.98px;
 $pc: 1086.98px;
+
+// animation
+$transition--default:transform 0.3s ease;
+$transform--default: scale(107%);
+
