@@ -1,34 +1,6 @@
-@use '../abstracts/variables' as var;
-@use '../base/typography';
-
-.border {
-    border: 2px solid rgb(0, 0, 0);
-    padding: 45px 45px 0px 0px;
-}
+@use "../abstracts/" as *;
 
 .banner {
-
-    &__container{
-        color: var.$white;
-    }
-
-    &__inner {
-        position: relative;
-        height: 670px;
-        background-image: url(../../img/banner/banner__background.png);
-    }
-
-    &__inner::after {
-        position: absolute;
-        right: 9px;
-        bottom: 7px;
-        content: '';
-        display: block;
-        width: 80px;
-        height: 219px;
-        background-image: url(../../img/banner/banner__decoration.png);
-
-    }
 
     &__cta {
         position: absolute;
@@ -36,54 +8,31 @@
         bottom: 24px;
     }
 
-    &__display {
-        max-width: 350px;
-        margin-bottom: 20px;
-    }
     &__button {
-        padding-right: 90px;
         padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    &__decoration {
+        position: absolute;
+        bottom: 7px;
+        right: 9px;
+    }
+
+    &__text {
+        color: $white;
+        max-width: 350px;
+        margin: 0px 0px 20px 0px;
     }
 }
-
-.new {
-
-    & {
-        margin-top: 70px;
-    }
-
-    &__container {
-    }
-    
-    &__content {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.card {
+.image {
 
     & {
-        width: 310px;
-        height: 272px;
-        border: 1px solid var.$black;
+        position: relative;
     }
 
-    &__image {
-        width: 157px;
-        height: 234px;
-    }
-
-    &__information {
-        text-align: center;
-    }
-
-    &__title {
-        @extend .font-card;
-    }
-
-    &__price {
-        @extend .font-card;
-        color: var.$accent;
+    &__border {
+        padding: 45px 45px 0px 0px;
+        border: 1px solid #000;
     }
 }
