@@ -1,36 +1,112 @@
 <!DOCTYPE html>
 <!-- Язык Страницы -->
 <html lang="en">
+    <head>
+        <!-- Юникод -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <!-- Юникод -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Название Документа -->
+        <title>Hike</title>
 
-    <!-- Название Документа -->
-    <title>Hike</title>
+        <!-- Удаляет ошибку о отсутсвии favicon.ico или же можно добавить favicon -->
+        <link rel="shortcut icon" href="#"/>
 
-    <!-- Удаляет ошибку о отсутсвии favicon.ico или же можно добавить favicon -->
-    <link rel="shortcut icon" href="#">
-    
-    <!-- Подключение Стилей -->
-    <link rel="stylesheet" href="css/main.css">
+        <!-- Подключение Стилей -->
+        <link rel="stylesheet" href="css/main.css"/>
 
-    <!-- подключение javascript -->
-    <script src="js/main.js" defer></script>
-</head>
+        <!-- подключение javascript -->
+        <script src="js/main.js" defer></script>
+    </head>
 
-<body>
-    <!-- Шапка -->
-    @@include("chunk/header.html")
-    
-    <!-- Основной Контент -->
-    <main class="main">
-    </main>
+    <body>
+        <!-- Шапка -->
+        @@include("chunk/header.html")
 
-    <!-- Подвал -->
-    @@include("chunk/footer.html")
-</body>
+        <!-- Основной Контент -->
+        <!-- <main class="main">
+            <div class="banner">
+                <div class="banner__container">
+                    <div class="border">
+                        <div class="banner__inner">
+                            <div class="banner__cta">
+                                <p class="banner__display font-display">
+                                    Через универсальность мы познаем истинный
+                                    конфорт и наслаждаемся жизнью
+                                </p>
+                                <button class="banner__button">
+                                    Выбрать рюкзак
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="new">
+                <div class="new__container">
+                    <h1 class="font-title">НАШИ НОВИНКИ</h1>
+                    <div class="new__content">
+                        <div class="card">
+                            <div class="card__image">
+                                <img
+                                    src="../img/product/product__backpacks/Rover-Pack-Premium.png"
+                                    alt="Rover-Pack-Premium"
+                                />
+                            </div>
+                            <div class="card__information">
+                                <div class="card__title">
+                                    ROVER PACK PREMIUM
+                                </div>
+                                <div class="card__price">1799 MDL</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__image">
+                                <img
+                                    src="../img/product/product__backpacks/Rover-Pack-Classic-Mini.png"
+                                    alt="Rover-Pack-Mini"
+                                />
+                            </div>
+                            <div class="card__information">
+                                <div class="card__title">ROVER PACK MINI</div>
+                                <div class="card__price">1199 MDL</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__image">
+                                <img
+                                    src="../img/product/product__backpacks/Rover-Pack-Classic-Mini-Canvas.png"
+                                    alt="Rover-Pack-Mini-Canvas"
+                                />
+                            </div>
+                            <div class="card__information">
+                                <div class="card__title">
+                                    ROVER PACK MINI CANVAS
+                                </div>
+                                <div class="card__price">1399 MDL</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__image">
+                                <img
+                                    src="../img/product/product__backpacks/Rover-Pack-Leather.png"
+                                    alt="Rover-Pack-Leather"
+                                />
+                            </div>
+                            <div class="card__information">
+                                <div class="card__title">
+                                    ROVER PACK LEATHER
+                                </div>
+                                <div class="card__price">2999 MDL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> -->
 
+        <!-- Подвал -->
+        @@include("chunk/footer.html")
+    </body>
 </html>

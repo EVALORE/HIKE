@@ -1,11 +1,15 @@
 {
-  "name": "gulp-starter",
+  "name": "gulp-webpack",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "build": "gulp --production"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovan-developer/gulp-webpack.git"
   },
   "browserslist": [
     "last 3 versions"
@@ -19,12 +23,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.18.6",
-    "@babel/preset-env": "^7.18.6",
-    "@babel/register": "^7.18.6",
-    "browser-sync": "^2.27.10",
-    "del": "^6.1.1",
-    "gulp": "^4.0.2",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "browser-sync": "^2.27.9",
+    "del": "^6.0.0",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -33,9 +35,9 @@
     "gulp-file-include": "^2.3.0",
     "gulp-fonter": "^0.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
-    "gulp-load-plugins": "^2.0.7",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1",
@@ -45,17 +47,17 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-shorthand": "^1.1.0",
     "gulp-size": "^4.0.1",
+    "gulp-svg-sprite": "^1.5.0",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
     "gulp-webp-html": "^1.0.2",
-    "require-dir": "^1.2.0",
-    "sass": "^1.53.0",
-    "webpack": "^5.73.0",
+    "sass": "^1.49.11",
+    "webpack": "^5.70.0",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "gulp-htmlmin": "^5.0.1"
+    "swiper": "^8.0.7"
   }
 }
