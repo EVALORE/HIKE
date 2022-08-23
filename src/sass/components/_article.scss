@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+.article {
+
+    & {
+        margin-right: 130px;
+    }
+
+    &__title {
+        @extend .font-category;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        max-width: 310px;
+        height: 108px;
+    }
+
+    &__bottom {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $black;
+    }
+}

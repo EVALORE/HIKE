@@ -1,11 +1,14 @@
-@use '../abstracts/' as *;
+@use "../abstracts" as *;
 
 button {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 146%;
     background: transparent;
     border: 1px solid $white;
     color: $white;
     padding: 6px 60px 13px 60px;
-    @extend .font-category;
     transition: $transition--default;
 }
 

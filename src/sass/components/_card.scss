@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+
+.card {
+
+    & {
+        border: 1px solid $black;
+        width: 310px;
+        height: 334px;
+    }
+
+    &:hover {
+        .card__image {
+            transform: $transform--default;
+        }
+    }
+
+    &__image {
+        height: 272px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: $transition--default;
+    }
+    
+    &__information {
+        border-top: 1px solid $black;
+        @extend .font-card;
+        text-align: center;
+        padding: 4px 0px;
+    }
+
+    &__price {
+        color: $accent;
+    }
+}

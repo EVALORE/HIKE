@@ -1,4 +1,4 @@
-@use "../abstracts/" as *;
+@use "../abstracts" as *;
 
 .banner {
 
@@ -25,14 +25,154 @@
         margin: 0px 0px 20px 0px;
     }
 }
-.image {
+
+.new {
 
     & {
-        position: relative;
+        margin-top: 70px;
+    }
+    
+    &__title {
+        margin-bottom: 20px;
+        @extend .font-title;
+    }
+
+    &__product {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.advantages {
+
+    & {
+        margin-top: 70px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 331px;
+    }
+
+    &__title {
+        @extend .font-title;
+    }
+
+    &__category {
+        margin-top: 30px;
+        @extend .font-category;
+    }
+
+    &__text {
+        max-width: 288px;
+        margin-top: 5px;
+        @extend .font-text;
+    }
+
+    &__decoration {
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
     }
 
     &__border {
-        padding: 45px 45px 0px 0px;
+        padding: 0px 0px 45px 45px;
         border: 1px solid #000;
+    }
+}
+
+.hit {
+
+    & {
+        margin-top: 70px;
+    }
+
+    &__title {
+        @extend .font-title;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: grid;
+        gap: 40px 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.collection {
+
+    &__information {
+        position: absolute;
+        left: 27px;
+        bottom: 25px;
+    }
+
+    &__suptitle {
+        @extend .font-category;
+        margin-bottom: -2px;
+        margin-left: 3px;
+    }
+
+    &__title {
+        @extend .font-title;
+    }
+
+    &__price {
+        @extend .font-category;
+        color: $accent;
+        margin-top: -5px;
+        margin-left: 3px;
+    }
+}
+
+.articles {
+
+    & {
+        margin-top: 70px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        @extend .font-title;
+        max-width: 420px;
+    }
+
+    &__content {
+        display: flex;
+    }
+}
+
+.instagram-posts {
+
+    & {
+        margin-top: 70px;
+    }
+
+    &__title {
+        @extend .font-title;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__column img{
+        margin-bottom: 20px;
     }
 }
