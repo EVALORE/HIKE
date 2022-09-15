@@ -1,0 +1,54 @@
+@use "../abstracts" as *;
+
+.login {
+
+    margin-top: 70px;
+
+    &__container {
+        max-width: 640px;
+    }
+
+    &__switch {
+        @extend .font-title;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    &__title {
+        color: $gray-20;
+
+        &:hover {
+            color: $gray-40;
+        }
+    }
+
+    &__input {
+        padding-left: 14px;
+        border: 1px solid #000;
+        @extend .font-card;
+        width: 640px;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+
+    &__button {
+        border: 1px solid #000;
+        color: #000;
+        @extend .font-card;
+        padding: 11px 300px 12px 300px;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    &__forgot {
+        margin-top: 5px;
+        @extend .font-card;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

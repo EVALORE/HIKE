@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+.page {
+    
+    &__title {
+        @extend .font-title;
+        margin-top: 70px;
+    }
+    
+    &__content {
+        margin-top: 70px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+}
+.category {
+
+    & {
+        color: $white;
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+    }
+
+    &__title {
+        @extend .font-title;
+        margin-bottom: 5px;
+    }
+
+    &__description {
+        @extend .font-text;
+        margin-bottom: 25px;
+    }
+}

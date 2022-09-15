@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.product {
+
+    & {
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+
+    &__title {
+        @extend .font-title;
+        margin-bottom: 70px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px 20px;
+    }
+}

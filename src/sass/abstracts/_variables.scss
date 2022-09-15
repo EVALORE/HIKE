@@ -3,15 +3,18 @@ $accent: rgb(195, 7, 13);
 $blue: rgb(66, 103, 178);
 $red: rgb(219, 68, 55);
 $active: rgba(255, 255, 255, 0.5);
-$gray: rgba(255, 255, 255, 0.2);
 
 $black: rgb(0, 0, 0);
+$gray-20:rgba(0, 0, 0, 0.2);
+$gray-40: rgba(0, 0, 0, 0.4);
 $white: rgb(255, 255, 255);
 
 // size
 $container: 1300px;
 $container-safe:15px;
-$icon-size: 24px;
+$icon-size-1: 24px;
+$icon-size-2: 25px;
+$icon-size-3: 32px;
 
 // media
 $mobile-small: 479.98px;

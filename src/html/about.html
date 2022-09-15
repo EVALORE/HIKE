@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Язык Страницы -->
+<html lang="en">
+  <head>
+    <!-- Юникод -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Название Документа -->
+    <title>Hike</title>
+
+    <!-- Удаляет ошибку о отсутсвии favicon.ico или же можно добавить favicon -->
+    <link rel="shortcut icon" href="#" />
+
+    <!-- Подключение Стилей -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- подключение javascript -->
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    @@include("chunk/header.html")
+
+    <!-- Основной Контент -->
+    <main class="main">
+      <div class="about">
+        <div class="about__container">
+          <div class="about__row">
+            <div class="about__column">
+              <h1 class="about__title">О НАШЕЙ КОМПАНИЙ</h1>
+              <div class="about__information">
+                <div class="about__category">Об основании нашей компании</div>
+                <p class="about__text">
+                  Наша команда работала в небольшой фирме по производству
+                  рюкзаков, но в 2008 году мы решили основать свою компанию по
+                  производству рюкзаков для путешествий, активного отдыха и
+                  ежедневных задач.
+                </p>
+              </div>
+            </div>
+            <div class="about__column">
+              <div class="image__border">
+                <div class="image">
+                  <img
+                    src="img/about/sewing-process.png"
+                    alt="sewing-process"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__row">
+            <div class="about__column">
+              <div class="image__border">
+                <div class="image">
+                  <img src="img/about/lifestyle.png" alt="lifestyle" />
+                </div>
+              </div>
+            </div>
+            <div class="about__column">
+              <div class="about__information">
+                <div class="about__category">Об основании нашей компании</div>
+                <p class="about__text">
+                  Наша команда работала в небольшой фирме по производству
+                  рюкзаков, но в 2008 году мы решили основать свою компанию по
+                  производству рюкзаков для путешествий, активного отдыха и
+                  ежедневных задач.
+                </p>
+              </div>
+              <div class="about__information">
+                <div class="about__category">Об основании нашей компании</div>
+                <p class="about__text">
+                  Наша команда работала в небольшой фирме по производству
+                  рюкзаков, но в 2008 году мы решили основать свою компанию по
+                  производству рюкзаков для путешествий, активного отдыха и
+                  ежедневных задач.
+                </p>
+              </div>
+              <div class="about__information">
+                <div class="about__category">Об основании нашей компании</div>
+                <p class="about__text">
+                  Наша команда работала в небольшой фирме по производству
+                  рюкзаков, но в 2008 году мы решили основать свою компанию по
+                  производству рюкзаков для путешествий, активного отдыха и
+                  ежедневных задач.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Подвал -->
+    @@include("chunk/footer.html")
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Язык Страницы -->
+<html lang="en">
+  <head>
+    <!-- Юникод -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Название Документа -->
+    <title>Hike</title>
+
+    <!-- Удаляет ошибку о отсутсвии favicon.ico или же можно добавить favicon -->
+    <link rel="shortcut icon" href="#" />
+
+    <!-- Подключение Стилей -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- подключение javascript -->
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    @@include("chunk/header.html")
+
+    <!-- Основной Контент -->
+    <main class="main">
+        <div class="login">
+            <div class="login__container">
+                <div class="login__switch">
+                    <div class="login__title">ВХОД</div>
+                    <div>\</div>
+                    <div class="login__title">РЕГИСТРАЦИЯ</div>
+                </div>
+                <form action="">
+                    <div>
+                        <input class="login__input" type="email" placeholder="Почтовый адрес">
+                    </div>
+                    <div>
+                        <input class="login__input" type="password" placeholder="Пароль">
+                    </div>
+                    <div>
+                        <button class="login__button">Войти</игеещ>
+                    </div>
+                    <div class="login__forgot">Забыли пароль?</div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    @@include("chunk/footer.html")
+  </body>
+</html>

@@ -31,9 +31,8 @@ body{
     padding: 0 var.$container-safe;
 }
 
-svg{
-    height: var.$icon-size;
-    width: var.$icon-size;
+textarea {
+    resize: none;
 }
 
 //? PC    =======================================================================================

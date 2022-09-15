@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Язык Страницы -->
+<html lang="en">
+  <head>
+    <!-- Юникод -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Название Документа -->
+    <title>Hike</title>
+
+    <!-- Удаляет ошибку о отсутсвии favicon.ico или же можно добавить favicon -->
+    <link rel="shortcut icon" href="#" />
+
+    <!-- Подключение Стилей -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- подключение javascript -->
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    @@include("chunk/header.html")
+
+    <!-- Основной Контент -->
+    <main class="main">
+      <div class="page">
+        <div class="page__container">
+          <h1 class="page__title">РЮКЗАКИ</h1>
+          <div class="page__content">
+            <div class="page__row">
+              <a href="" class="category">
+                <div class="image__border">
+                  <div class="image">
+                    <img
+                      src="img/product/collection/daypack.png"
+                      alt="daypack"
+                    />
+                    <div class="category__content">
+                      <div class="category__title">DAYPACK</div>
+                      <div class="category__description">
+                        Для ежедневного удобства
+                      </div>
+                      <button class="category__button">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="category">
+                <div class="image__border">
+                  <div class="image">
+                    <img
+                      src="img/product/collection/rover-pack.png"
+                      alt="daypack"
+                    />
+                    <div class="category__content">
+                      <div class="category__title">ROVER PACK</div>
+                      <div class="category__description">
+                        Ни дня без путешествий
+                      </div>
+                      <button class="category__button">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="page__row">
+              <a href="" class="category">
+                <div class="image__border">
+                  <div class="image">
+                    <img
+                      src="img/product/collection/klettersack.png"
+                      alt="daypack"
+                    />
+                    <div class="category__content">
+                      <div class="category__title">KLETTERSACK</div>
+                      <div class="category__description">
+                        Осиль беcкрайние горы и река
+                      </div>
+                      <button class="category__button">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Подвал -->
+    @@include("chunk/footer.html")
+  </body>
+</html>

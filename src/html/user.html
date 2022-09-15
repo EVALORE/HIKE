@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Язык Страницы -->
+<html lang="en">
+  <head>
+    <!-- Юникод -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Название Документа -->
+    <title>Hike</title>
+
+    <!-- Удаляет ошибку о отсутсвии favicon.ico или же можно добавить favicon -->
+    <link rel="shortcut icon" href="#" />
+
+    <!-- Подключение Стилей -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- подключение javascript -->
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    @@include("chunk/header.html")
+
+    <!-- Основной Контент -->
+    <main class="main">
+      <div class="profile">
+        <div class="profile__container">
+          <h1 class="profile__title">КАБИНЕТ</h1>
+          <div class="profile__inner">
+            <div class="profile__sidebar">
+              <div class="profile__sidebar-title">Личные данные</div>
+              <div class="profile__sidebar-decoration"></div>
+              <ul class="profile__options">
+                <li class="profile__option">Личные данные</li>
+                <li class="profile__option">Список покупок</li>
+                <li class="profile__option">Выйти</li>
+              </ul>
+            </div>
+            <div class="profile__content">
+              <form action="" class="profile__user-information">
+                <div class="profile-form__row">
+                  <div>
+                    <input
+                      class="profile__user-name"
+                      id="formEmail"
+                      type="text"
+                      name="tel"
+                      placeholder="Имя Фамилия"
+                    />
+                  </div>
+                </div>
+                <div class="profile-form__row">
+                  <div class="dropdown">
+                    <button type="button" class="dropdown__button">
+                      17лет
+                    </button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="1">16лет</li>
+                      <li class="dropdown__list-item" data-value="2">17лет</li>
+                      <li class="dropdown__list-item" data-value="3">18лет</li>
+                      <li class="dropdown__list-item" data-value="4">19лет</li>
+                      <li class="dropdown__list-item" data-value="5">20лет</li>
+                      <li class="dropdown__list-item" data-value="6">21лет</li>
+                      <li class="dropdown__list-item" data-value="7">22лет</li>
+                      <li class="dropdown__list-item" data-value="8">23лет</li>
+                    </ul>
+                    <input
+                      class="dropdown__input-hidden"
+                      type="text"
+                      name="select-category"
+                      value=""
+                    />
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" class="dropdown__button">
+                      Мужской
+                    </button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="1">
+                        Мужской
+                      </li>
+                      <li class="dropdown__list-item" data-value="2">
+                        Женский
+                      </li>
+                    </ul>
+                    <input
+                      type="text"
+                      name="select-category"
+                      value=""
+                      class="dropdown__input-hidden"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      class="profile__user"
+                      id="formEmail"
+                      type="text"
+                      name="tel"
+                      placeholder="Номер Телефона"
+                    />
+                  </div>
+                </div>
+                <div class="profile-form__row">
+                  <div>
+                    <input
+                      class="profile-form__input profile-form__input-1"
+                      id="formEmail"
+                      type="text"
+                      name="tel"
+                      placeholder="Почтовый адресс"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      class="profile-form__input profile-form__input-1"
+                      id="formEmail"
+                      type="text"
+                      name="tel"
+                      placeholder="Домашний адрес"
+                    />
+                  </div>
+                </div>
+                <div class="profile-form__row">
+                  <button class="profile-form__button">Изменить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Подвал -->
+    @@include("chunk/footer.html")
+  </body>
+</html>

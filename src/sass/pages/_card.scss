@@ -1,0 +1,443 @@
+@use '../abstracts/' as *;
+
+.good {
+  & {
+    margin-top: 70px;
+  }
+
+  &_rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__column {
+  }
+
+  &__image-variants {
+  }
+
+  &__image-variant {
+    display: block;
+    margin-bottom: 20px;
+    &:hover {
+      border: 1px solid $accent;
+    }
+  }
+
+  &__image {
+  }
+
+  &__review {
+    @extend .font-card;
+  }
+
+  &__title {
+    @extend .font-title;
+    margin-bottom: 26px;
+  }
+
+  &__color-variants {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 46px;
+  }
+
+  &__color-variant {
+    svg {
+      width: $icon-size-3;
+      height: $icon-size-3;
+    }
+  }
+
+  &__price {
+    @extend .font-title;
+    color: $accent;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    button {
+      border-color: $black;
+      color: $black;
+      padding: 11px 33px 12px 33px;
+      @extend .font-card;
+    }
+
+    button:hover {
+      color: $white;
+      border-color: $white;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 640px;
+  }
+
+  &__promises {
+    display: flex;
+    gap: 70px;
+    border-top: 1px solid $gray-20;
+    border-bottom: 1px solid $gray-20;
+  }
+
+  &__promise {
+    display: flex;
+    align-items: center;
+    @extend .font-card;
+    color: $accent;
+
+    span {
+      margin-left: 20px;
+    }
+  }
+
+  &__characteristics {
+    margin-top: 20px;
+  }
+
+  &__characteristic {
+    & {
+      cursor: pointer;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @extend .font-card;
+    }
+
+    &:hover {
+      span {
+        transform: rotate(90deg);
+      }
+    }
+
+    span {
+      font-family: 'Oswald';
+      font-size: 28px;
+      line-height: 90%;
+      transition: $transition--default;
+    }
+  }
+}
+
+.characteristics {
+  &__container {
+  }
+
+  &__row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+  }
+
+  &__row:last-child {
+    .characteristics__column:last-child {
+      margin-top: 65px;
+    }
+  }
+
+  &__list {
+  }
+
+  &__title {
+    @extend .font-category;
+    margin-top: 14px;
+    margin-bottom: -5px;
+  }
+
+  &__characteristic {
+    @extend .font-title;
+  }
+
+  &__image {
+  }
+}
+.functions {
+
+  & {
+    margin-top: 9px;
+  }
+
+  &__title {
+    @extend .font-category;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+}
+
+.ch-dc-1,
+.ch-dc-2,
+.ch-dc-3,
+.ch-dc-4,
+.ch-dc-5,
+.ch-dc-6,
+.ch-dc-7 {
+  & {
+    position: relative;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    border: 1px solid #000;
+    width: 500px;
+    left: 0;
+    bottom: -4px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    border: 8px solid $white;
+    border-radius: 50%;
+    left: 0;
+    bottom: -11px;
+  }
+}
+
+.ch-dc-1 {
+  &::before {
+    width: 897px;
+  }
+
+  &::after {
+    left: 890px;
+  }
+}
+.ch-dc-2 {
+  &::before {
+    width: 980px;
+  }
+
+  &::after {
+    left: 973px;
+  }
+}
+.ch-dc-3 {
+  &::before {
+    width: 938px;
+  }
+
+  &::after {
+    left: 931px;
+  }
+}
+.ch-dc-4 {
+  &::before {
+    width: 963px;
+  }
+
+  &::after {
+    left: 956px;
+  }
+}
+.ch-dc-5 {
+  &::before {
+    width: 1080px;
+  }
+
+  &::after {
+    left: 1073px;
+  }
+}
+
+.ch-dc-6 {
+  &::before {
+    left: -454px;
+    width: 1061px;
+  }
+
+  &::after {
+    left: -454px;
+  }
+}
+.ch-dc-7 {
+  &::before {
+    left: -396px;
+    width: 1003px;
+  }
+
+  &::after {
+    left: -396px;
+  }
+}
+
+
+
+.reviews {
+
+  margin-top: 70px;
+
+  &__container {
+  }
+
+  &__title {
+    @extend .font-title;
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 60px 20px;
+    flex-wrap: wrap;
+  }
+  
+  &__item {
+  }
+}
+.review {
+  max-width: 640px;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__row:first-of-type {
+    margin-bottom: 10px;
+  }
+
+  &__row:last-of-type {
+    border-bottom: 1px solid #000;
+  }
+
+  &__rating {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+  }
+
+  &__text {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    @extend .font-card;
+  }
+}
+.user {
+
+  & {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__icon {
+    svg {
+      width: 51px;
+      height: 51px;
+    }
+  }
+
+  &__name {
+    @extend .font-category;
+  }
+}
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  &__up {
+    height: 24px;
+  }
+
+  &__value {
+    @extend .font-card;
+    color: $accent;
+  }
+
+  &__down {
+    height: 24px;
+    svg {
+      transform: rotate(180deg)
+    }
+  }
+}
+.add-review {
+
+  margin-top: 70px;
+
+  &__title {
+    @extend .font-category;
+    margin-bottom: 20px;
+  }
+
+  &__rate {
+    display: flex;
+    gap: 75px;
+    margin-bottom: 10px;
+  }
+
+  &__rating-text {
+    @extend .font-card;
+  }
+
+  &__rating {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__text {
+    width: 640px;
+    height: 150px;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 28px 13px 28px;
+    @extend .font-card;
+  }
+
+  &__button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+
+
+.crumbs {
+  @extend .font-card;
+  color: $gray-20;
+  margin-bottom: 20px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.star {
+
+  svg {
+    width: $icon-size-2;
+    height: $icon-size-2;
+    fill: $gray-20;
+    transition: $transition--default;
+  }
+  svg:hover {
+    fill: rgba(0, 0, 0, 0.4);
+  }
+}

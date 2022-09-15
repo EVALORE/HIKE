@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Язык Страницы -->
+<html lang="en">
+  <head>
+    <!-- Юникод -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Название Документа -->
+    <title>Hike</title>
+
+    <!-- Удаляет ошибку о отсутсвии favicon.ico или же можно добавить favicon -->
+    <link rel="shortcut icon" href="#">
+
+    <!-- Подключение Стилей -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- подключение javascript -->
+    <script src="js/main.js" defer="defer"></script>
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+    <div class="header__container">
+        <div class="header__logo"><a href="index.html"><img src="img/logo/logo__large.svg" alt="logo"></a></div>
+        <ul class="menu">
+            <li class="menu__item"><a href="backpacks.html" class="menu__link">Рюкзаки</a></li>
+            <li class="menu__item"><a href="accesories.html" class="menu__link">Аксессуары</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+            <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+        </ul>
+        <div class="header__actions">
+            <a href="#" class="action">
+                <svg>
+                    <use xlink:href="img/sprite.svg#profile"></use>
+                </svg>
+            </a>
+            <a href="#" class="action">
+                <svg>
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+
+    <!-- Основной Контент -->
+    <main class="main">
+      <div class="page">
+        <div class="page__container">
+          <h1 class="page__title">РЮКЗАКИ</h1>
+          <div class="page__content">
+            <div class="page__row">
+              <a href="" class="category">
+                <div class="image__border">
+                  <div class="image">
+                    <picture><source srcset="img/product/collection/daypack.webp" type="image/webp"><img src="img/product/collection/daypack.png" alt="daypack"></picture>
+                    <div class="category__content">
+                      <div class="category__title">DAYPACK</div>
+                      <div class="category__description">
+                        Для ежедневного удобства
+                      </div>
+                      <button class="category__button">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="category">
+                <div class="image__border">
+                  <div class="image">
+                    <picture><source srcset="img/product/collection/rover-pack.webp" type="image/webp"><img src="img/product/collection/rover-pack.png" alt="daypack"></picture>
+                    <div class="category__content">
+                      <div class="category__title">ROVER PACK</div>
+                      <div class="category__description">
+                        Ни дня без путешествий
+                      </div>
+                      <button class="category__button">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="page__row">
+              <a href="" class="category">
+                <div class="image__border">
+                  <div class="image">
+                    <picture><source srcset="img/product/collection/klettersack.webp" type="image/webp"><img src="img/product/collection/klettersack.png" alt="daypack"></picture>
+                    <div class="category__content">
+                      <div class="category__title">KLETTERSACK</div>
+                      <div class="category__description">
+                        Осиль беcкрайние горы и река
+                      </div>
+                      <button class="category__button">Посмотреть</button>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+  <div class="footer__top">
+    <div class="footer__container">
+      <div class="footer__top-column">
+        <div class="footer__decoration"><picture><source srcset="img/advantages/advantages__decoration.webp" type="image/webp"><img src="img/advantages/advantages__decoration.png" alt=""></picture></div>
+        <div class="footer__link">@HIKE_PROD</div>
+        <div class="footer__second-decoration"><picture><source srcset="img/arrow-white.webp" type="image/webp"><img src="img/arrow-white.png" alt=""></picture></div>
+      </div>
+      <div class="footer__top-column">
+        <div class="footer__link">hike_prod@gmail.com</div>
+        <div class="footer__link">022 000 444</div>
+        <div class="footer__decoration"><picture><source srcset="img/advantages/advantages__decoration.webp" type="image/webp"><img src="img/advantages/advantages__decoration.png" alt=""></picture></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__container">
+        <div class="footer__column">
+            <img src="img/logo/logo__small.svg" alt="logo">
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">Меню</div>
+            <ul class="list">
+              <li class="list__link">Корзина</li>
+              <li class="list__link">Кабинет</li>
+              <li class="list__link">Рюкзаки</li>
+              <li class="list__link">Аксессуары</li>
+              <li class="list__link">О нас</li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">Контакты</div>
+            <ul class="list">
+              <li class="list__link">067-771-110</li>
+              <li class="list__link">022 000-444</li>
+              <li class="list__link">hike_prod@gmail.com</li>
+              <li class="list__link">ул. Унирий 7</li>
+              <li class="list__link"></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">Расположение showroom’а</div>
+            <div class="map">
+              <picture><source srcset="img/image5.webp" type="image/webp"><img src="img/image5.png" alt="map"></picture>
+            </div>
+          </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

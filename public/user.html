@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- Язык Страницы -->
+<html lang="en">
+  <head>
+    <!-- Юникод -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Название Документа -->
+    <title>Hike</title>
+
+    <!-- Удаляет ошибку о отсутсвии favicon.ico или же можно добавить favicon -->
+    <link rel="shortcut icon" href="#">
+
+    <!-- Подключение Стилей -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- подключение javascript -->
+    <script src="js/main.js" defer="defer"></script>
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+    <div class="header__container">
+        <div class="header__logo"><a href="index.html"><img src="img/logo/logo__large.svg" alt="logo"></a></div>
+        <ul class="menu">
+            <li class="menu__item"><a href="backpacks.html" class="menu__link">Рюкзаки</a></li>
+            <li class="menu__item"><a href="accesories.html" class="menu__link">Аксессуары</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+            <li class="menu__item"><a href="about.html" class="menu__link">О нас</a></li>
+        </ul>
+        <div class="header__actions">
+            <a href="#" class="action">
+                <svg>
+                    <use xlink:href="img/sprite.svg#profile"></use>
+                </svg>
+            </a>
+            <a href="#" class="action">
+                <svg>
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+
+    <!-- Основной Контент -->
+    <main class="main">
+      <div class="profile">
+        <div class="profile__container">
+          <h1 class="profile__title">КАБИНЕТ</h1>
+          <div class="profile__inner">
+            <div class="profile__sidebar">
+              <div class="profile__sidebar-title">Личные данные</div>
+              <div class="profile__sidebar-decoration"></div>
+              <ul class="profile__options">
+                <li class="profile__option">Личные данные</li>
+                <li class="profile__option">Список покупок</li>
+                <li class="profile__option">Выйти</li>
+              </ul>
+            </div>
+            <div class="profile__content">
+              <form action="" class="profile__user-information">
+                <div class="profile-form__row">
+                  <div>
+                    <input class="profile__user-name" id="formEmail" type="text" name="tel" placeholder="Имя Фамилия">
+                  </div>
+                </div>
+                <div class="profile-form__row">
+                  <div class="dropdown">
+                    <button type="button" class="dropdown__button">
+                      17лет
+                    </button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="1">16лет</li>
+                      <li class="dropdown__list-item" data-value="2">17лет</li>
+                      <li class="dropdown__list-item" data-value="3">18лет</li>
+                      <li class="dropdown__list-item" data-value="4">19лет</li>
+                      <li class="dropdown__list-item" data-value="5">20лет</li>
+                      <li class="dropdown__list-item" data-value="6">21лет</li>
+                      <li class="dropdown__list-item" data-value="7">22лет</li>
+                      <li class="dropdown__list-item" data-value="8">23лет</li>
+                    </ul>
+                    <input class="dropdown__input-hidden" type="text" name="select-category" value="">
+                  </div>
+                  <div class="dropdown">
+                    <button type="button" class="dropdown__button">
+                      Мужской
+                    </button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="1">
+                        Мужской
+                      </li>
+                      <li class="dropdown__list-item" data-value="2">
+                        Женский
+                      </li>
+                    </ul>
+                    <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                  </div>
+                  <div>
+                    <input class="profile__user" id="formEmail" type="text" name="tel" placeholder="Номер Телефона">
+                  </div>
+                </div>
+                <div class="profile-form__row">
+                  <div>
+                    <input class="profile-form__input profile-form__input-1" id="formEmail" type="text" name="tel" placeholder="Почтовый адресс">
+                  </div>
+                  <div>
+                    <input class="profile-form__input profile-form__input-1" id="formEmail" type="text" name="tel" placeholder="Домашний адрес">
+                  </div>
+                </div>
+                <div class="profile-form__row">
+                  <button class="profile-form__button">Изменить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+  <div class="footer__top">
+    <div class="footer__container">
+      <div class="footer__top-column">
+        <div class="footer__decoration"><picture><source srcset="img/advantages/advantages__decoration.webp" type="image/webp"><img src="img/advantages/advantages__decoration.png" alt=""></picture></div>
+        <div class="footer__link">@HIKE_PROD</div>
+        <div class="footer__second-decoration"><picture><source srcset="img/arrow-white.webp" type="image/webp"><img src="img/arrow-white.png" alt=""></picture></div>
+      </div>
+      <div class="footer__top-column">
+        <div class="footer__link">hike_prod@gmail.com</div>
+        <div class="footer__link">022 000 444</div>
+        <div class="footer__decoration"><picture><source srcset="img/advantages/advantages__decoration.webp" type="image/webp"><img src="img/advantages/advantages__decoration.png" alt=""></picture></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__container">
+        <div class="footer__column">
+            <img src="img/logo/logo__small.svg" alt="logo">
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">Меню</div>
+            <ul class="list">
+              <li class="list__link">Корзина</li>
+              <li class="list__link">Кабинет</li>
+              <li class="list__link">Рюкзаки</li>
+              <li class="list__link">Аксессуары</li>
+              <li class="list__link">О нас</li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">Контакты</div>
+            <ul class="list">
+              <li class="list__link">067-771-110</li>
+              <li class="list__link">022 000-444</li>
+              <li class="list__link">hike_prod@gmail.com</li>
+              <li class="list__link">ул. Унирий 7</li>
+              <li class="list__link"></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">Расположение showroom’а</div>
+            <div class="map">
+              <picture><source srcset="img/image5.webp" type="image/webp"><img src="img/image5.png" alt="map"></picture>
+            </div>
+          </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

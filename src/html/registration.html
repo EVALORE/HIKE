@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Язык Страницы -->
+<html lang="en">
+  <head>
+    <!-- Юникод -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Название Документа -->
+    <title>Hike</title>
+
+    <!-- Удаляет ошибку о отсутсвии favicon.ico или же можно добавить favicon -->
+    <link rel="shortcut icon" href="#" />
+
+    <!-- Подключение Стилей -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- подключение javascript -->
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Шапка -->
+    @@include("chunk/header.html")
+
+    <!-- Основной Контент -->
+    <main class="main">
+        <div class="registration">
+            <div class="registration__container">
+                <div class="login__switch">
+                    <div class="login__title">ВХОД</div>
+                    <div>\</div>
+                    <div class="login__title">РЕГИСТРАЦИЯ</div>
+                </div>
+                <form action="">
+                    <div>
+                        <button class="registration__button-google">Google<span><svg><use xlink:href="img/sprite.svg#google"></use></svg></span></button>
+                    </div>
+                    <div>
+                        <button class="registration__button-facebook">Facebook<span><svg><use xlink:href="img/sprite.svg#facebook"></use></svg></span></button>
+                    </div>
+                    <div>
+                        <button class="registration__button">Создать аккаунт</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    @@include("chunk/footer.html")
+  </body>
+</html>

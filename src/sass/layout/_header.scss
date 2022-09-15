@@ -1,13 +1,13 @@
-@use '../abstracts/variables' as var;
+@use '../abstracts' as *;
 
 .header {
 
     &__logo {
-        transition: var.$transition--default;
-    }
+        transition: $transition--default;
 
-    &__logo:hover {
-        transform: var.$transform--default;
+        &:hover {
+            transform: $transform--default;
+        }
     }
 
     & {
@@ -26,12 +26,18 @@
     }
 
     .action {
-        display: block;
-        transition: var.$transition--default;
-    }
+        & {
+            display: block;
+            transition: $transition--default;
+        }
 
-    .action:hover{
-        transform: var.$transform--default;
+        &:hover {
+            transform: $transform--default;
+        }
+        svg {
+            width: $icon-size-1;
+            height: $icon-size-1;
+        }
     }
 }
 .menu {
@@ -42,13 +48,12 @@
     }
 
     &__item {
-        transition: var.$transition--default;
-    }
+        & {
+            transition: $transition--default;
+        }
 
-    &__item:hover {
-        transform: var.$transform--default;
-    }
-
-    &__link {
+        &:hover {
+            transform: $transform--default;
+        }
     }
 }

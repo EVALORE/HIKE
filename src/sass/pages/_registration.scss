@@ -1,0 +1,89 @@
+@use "../abstracts" as *;
+
+.registration {
+
+    margin-top: 70px;
+
+    &__container {
+        max-width: 670px;
+    }
+
+    &__button {
+        display: block;
+        width: 100%;
+        height: 50px;
+        color: #000;
+        padding: 11px 0px 12px 0px;
+        border: 1px solid #000;
+
+        &:hover {
+            color: $white;
+            border-color: $white;
+        }
+
+        @extend .font-card;
+
+        &-google {
+            border: 1px solid $red;
+            color: $red;
+            position: relative;
+            width: 100%;
+            height: 50px;
+            @extend .font-card;
+            display: block;
+            padding: 11px 0px 12px 0px;
+            margin-bottom: 25px;
+
+            &:hover {
+                color: $white;
+                background-color: $red;
+
+                span svg {
+                    fill: $white;
+                }
+            }
+
+            span {
+                position: absolute;
+                right: 20px;
+                bottom: 4px;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    fill: $red;
+                }
+            }
+        }
+        
+        &-facebook {
+            width: 100%;
+            border: 1px solid $blue;
+            color: $blue;
+            position: relative;
+            @extend .font-card;
+            margin-bottom: 60px;
+            padding: 11px 0px 12px 0px;
+            &:hover {
+                color: $white;
+                background-color: $blue;
+
+                span svg {
+                    fill: $white;
+                }
+            }
+
+            span {
+                position: absolute;
+                right: 27px;
+                bottom: 5px;
+
+                svg {
+                    width: 15px;
+                    height: 30px;
+                    fill: $blue;
+                }
+            }
+        }
+    }
+}

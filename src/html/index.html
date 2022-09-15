@@ -1,208 +1,281 @@
 <!DOCTYPE html>
 <!-- Язык Страницы -->
 <html lang="en">
-
-<head>
+  <head>
     <!-- Юникод -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Название Документа -->
     <title>Hike</title>
 
     <!-- Удаляет ошибку о отсутсвии favicon.ico или же можно добавить favicon -->
-    <link rel="shortcut icon" href="#">
-    
+    <link rel="shortcut icon" href="#" />
+
     <!-- Подключение Стилей -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
 
     <!-- подключение javascript -->
     <script src="js/main.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Шапка -->
     @@include("chunk/header.html")
-    
+
     <!-- Основной Контент -->
     <main class="main">
-        <div class="banner">
-            <div class="banner__container">
-                <div class="image__border">
-                    <div class="image">
-                        <img src="img/banner/banner__background.png" alt="banner background">
-                        <div class="banner__cta">
-                            <div class="banner__text font-display">Через универсальность мы познаем истинный конфорт и наслаждаемся жизнью</div>
-                            <button class="banner__button">Выбрать рюкзак</button>
-                        </div>
-                        <div class="banner__decoration"><img src="img/banner/banner__decoration.png" alt=""></div>
-                    </div>
+      <div class="banner">
+        <div class="banner__container">
+          <div class="image__border">
+            <div class="image">
+              <img
+                src="img/banner/banner__background.png"
+                alt="banner background"
+              />
+              <div class="banner__cta">
+                <div class="banner__text font-display">
+                  Через универсальность мы познаем истинный конфорт и
+                  наслаждаемся жизнью
                 </div>
+                <button class="banner__button">Выбрать рюкзак</button>
+              </div>
+              <div class="banner__decoration">
+                <img src="img/banner/banner__decoration.png" alt="" />
+              </div>
             </div>
+          </div>
         </div>
-        <section class="new">
-            <div class="new__container">
-                <h1 class="new__title">НАШИ НОВИНКИ</h1>
-                <div class="new__product">
-                    <div class="card">
-                        <div class="card__image"><img src="img/product/product__backpacks/rover_pack_premium.png" alt="rover_pack_premium"></div>
-                        <div class="card__information">
-                            <div>ROVER PACK PREMIUM</div>
-                            <div class="card__price">1799 MDL</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__image"><img src="img/product/product__backpacks/rover_pack_premium.png" alt="rover_pack_premium"></div>
-                        <div class="card__information">
-                            <div>ROVER PACK PREMIUM</div>
-                            <div class="card__price">1799 MDL</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__image"><img src="img/product/product__backpacks/rover_pack_premium.png" alt="rover_pack_premium"></div>
-                        <div class="card__information">
-                            <div>ROVER PACK PREMIUM</div>
-                            <div class="card__price">1799 MDL</div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__image"><img src="img/product/product__backpacks/rover_pack_premium.png" alt="rover_pack_premium"></div>
-                        <div class="card__information">
-                            <div>ROVER PACK PREMIUM</div>
-                            <div class="card__price">1799 MDL</div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <section class="new">
+        <div class="new__container">
+          <h1 class="new__title">НАШИ НОВИНКИ</h1>
+          <div class="new__product">
+            <div class="card">
+              <div class="card__image">
+                <img
+                  src="img/product/product__backpacks/rover_pack_premium.png"
+                  alt="rover_pack_premium"
+                />
+              </div>
+              <div class="card__information">
+                <div>ROVER PACK PREMIUM</div>
+                <div class="card__price">1799 MDL</div>
+              </div>
             </div>
-        </section>
-        <section class="advantages">
-            <div class="advantages__container">
-                <div class="advantages__content">
-                    <h2 class="advantages__title">РЮКЗАКИ ОТ HIKE — ЭТО...</h2>
-                    <div class="advantages__category">Гарантия</div>
-                    <p class="advantages__text">Пожизненная гарантия на весь ассортимент</p>
-                    <div class="advantages__category">Гарантия</div>
-                    <p class="advantages__text">Пожизненная гарантия на весь ассортимент</p>
-                    <div class="advantages__category">Гарантия</div>
-                    <p class="advantages__text">Пожизненная гарантия на весь ассортимент</p>
-                </div>
-                <div class="advantages__border">
-                    <div class="image">
-                        <img src="img/advantages/advantages__image.png" alt="advantages__image">
-                        <div class="advantages__decoration"><img src="img/advantages/advantages__decoration.png" alt="advantages__decoration"></div>
-                    </div>
-                </div>
+            <div class="card">
+              <div class="card__image">
+                <img
+                  src="img/product/product__backpacks/rover_pack_premium.png"
+                  alt="rover_pack_premium"
+                />
+              </div>
+              <div class="card__information">
+                <div>ROVER PACK PREMIUM</div>
+                <div class="card__price">1799 MDL</div>
+              </div>
             </div>
-        </section>
-        <section class="hit">
-            <div class="hit__container">
-                <h3 class="hit__title">ТОП ПРОДАЖ</h3>
-                <div class="hit__content">
-                    <div class="collection">
-                        <div class="image__border">
-                            <div class="image">
-                                <img src="img/product/collection/daypack__collection.png" alt="daypack__collection">
-                                <div class="collection__information">
-                                    <div class="collection__suptitle">популярная коллекция</div>
-                                    <div class="collection__title">DAYPACK</div>
-                                    <div class="collection__price">от 1999 MDL</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hit__list">
-                        <div class="card">
-                            <div class="card__image"><img src="img/product/product__backpacks/rover_pack_premium.png" alt="rover_pack_premium"></div>
-                            <div class="card__information">
-                                <div>ROVER PACK PREMIUM</div>
-                                <div class="card__price">1799 MDL</div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card__image"><img src="img/product/product__backpacks/rover_pack_premium.png" alt="rover_pack_premium"></div>
-                            <div class="card__information">
-                                <div>ROVER PACK PREMIUM</div>
-                                <div class="card__price">1799 MDL</div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card__image"><img src="img/product/product__backpacks/rover_pack_premium.png" alt="rover_pack_premium"></div>
-                            <div class="card__information">
-                                <div>ROVER PACK PREMIUM</div>
-                                <div class="card__price">1799 MDL</div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card__image"><img src="img/product/product__backpacks/rover_pack_premium.png" alt="rover_pack_premium"></div>
-                            <div class="card__information">
-                                <div>ROVER PACK PREMIUM</div>
-                                <div class="card__price">1799 MDL</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+              <div class="card__image">
+                <img
+                  src="img/product/product__backpacks/rover_pack_premium.png"
+                  alt="rover_pack_premium"
+                />
+              </div>
+              <div class="card__information">
+                <div>ROVER PACK PREMIUM</div>
+                <div class="card__price">1799 MDL</div>
+              </div>
             </div>
-        </section>
-        <section class="articles">
-            <div class="articles__container">
-                <div class="articles__top">
-                    <h4 class="articles__title">ЗНАЕМ ВСЕ О РЮКЗАКАХ</h4>
-                    <img src="img/arrow.svg" alt="arrow">
-                </div>
-                <div class="articles__content">
-                    <div class="article">
-                        <div class="article__title">Еще две недели!</div>
-                        <p class="article__text">Мы гордимся успехами наших клиентов, надеемся вы так же нами гордитесь</p>
-                        <div class="article__bottom">
-                            <img src="img/ellipse.svg" alt="ellipse">
-                            <div class="article__date">6 фев, 2020</div>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article__title">Еще две недели!</div>
-                        <p class="article__text">Мы гордимся успехами наших клиентов, надеемся вы так же нами гордитесь</p>
-                        <div class="article__bottom">
-                            <img src="img/ellipse.svg" alt="ellipse">
-                            <div class="article__date">6 фев, 2020</div>
-                        </div>
-                    </div>
-                    <div class="article">
-                        <div class="article__title">Еще две недели!</div>
-                        <p class="article__text">Мы гордимся успехами наших клиентов, надеемся вы так же нами гордитесь</p>
-                        <div class="article__bottom">
-                            <img src="img/ellipse.svg" alt="ellipse">
-                            <div class="article__date">6 фев, 2020</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+              <div class="card__image">
+                <img
+                  src="img/product/product__backpacks/rover_pack_premium.png"
+                  alt="rover_pack_premium"
+                />
+              </div>
+              <div class="card__information">
+                <div>ROVER PACK PREMIUM</div>
+                <div class="card__price">1799 MDL</div>
+              </div>
             </div>
-        </section>
-        <section class="instagram-posts">
-            <div class="instagram-posts__container">
-                <h5 class="instagram-posts__title">ИНСТАГРАМ @HIKE_PROD</h5>
-                <div class="instagram-posts__content">
-                    <div class="instagram-posts__column">
-                        <img src="img/instagram/post11.png">
-                        <img src="img/instagram/post12.png">
-                    </div>
-                    <div class="instagram-posts__column">
-                        <img src="img/instagram/post21.png">
-                        <img src="img/instagram/post22.png">
-                    </div>
-                    <div class="instagram-posts__column">
-                        <img src="img/instagram/post3.png">
-                    </div>
-                    <div class="instagram-posts__column">
-                        <img src="img/instagram/post41.png">
-                        <img src="img/instagram/post42.png">
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__container">
+          <div class="advantages__content">
+            <h2 class="advantages__title">РЮКЗАКИ ОТ HIKE — ЭТО...</h2>
+            <div class="advantages__category">Гарантия</div>
+            <p class="advantages__text">
+              Пожизненная гарантия на весь ассортимент
+            </p>
+            <div class="advantages__category">Качество</div>
+            <p class="advantages__text">
+              Износостойкий и приятный на ощупь материал
+            </p>
+            <div class="advantages__category">Дизайн</div>
+            <p class="advantages__text">
+              Универсальный дизайн с широким функционалом
+            </p>
+          </div>
+          <div class="advantages__border">
+            <div class="image">
+              <img
+                src="img/advantages/advantages__image.png"
+                alt="advantages__image"
+              />
+              <div class="advantages__decoration">
+                <img
+                  src="img/advantages/advantages__decoration.png"
+                  alt="advantages__decoration"
+                />
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="hit">
+        <div class="hit__container">
+          <h3 class="hit__title">ТОП ПРОДАЖ</h3>
+          <div class="hit__content">
+            <div class="collection">
+              <div class="image__border">
+                <div class="image">
+                  <img
+                    src="img/product/collection/daypack__collection.png"
+                    alt="daypack__collection"
+                  />
+                  <div class="collection__information">
+                    <div class="collection__suptitle">популярная коллекция</div>
+                    <div class="collection__title">DAYPACK</div>
+                    <div class="collection__price">от 1999 MDL</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hit__list">
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="img/product/product__backpacks/rover_pack_premium.png"
+                    alt="rover_pack_premium"
+                  />
+                </div>
+                <div class="card__information">
+                  <div>ROVER PACK PREMIUM</div>
+                  <div class="card__price">1799 MDL</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="img/product/product__backpacks/rover_pack_premium.png"
+                    alt="rover_pack_premium"
+                  />
+                </div>
+                <div class="card__information">
+                  <div>ROVER PACK PREMIUM</div>
+                  <div class="card__price">1799 MDL</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="img/product/product__backpacks/rover_pack_premium.png"
+                    alt="rover_pack_premium"
+                  />
+                </div>
+                <div class="card__information">
+                  <div>ROVER PACK PREMIUM</div>
+                  <div class="card__price">1799 MDL</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <img
+                    src="img/product/product__backpacks/rover_pack_premium.png"
+                    alt="rover_pack_premium"
+                  />
+                </div>
+                <div class="card__information">
+                  <div>ROVER PACK PREMIUM</div>
+                  <div class="card__price">1799 MDL</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="articles">
+        <div class="articles__container">
+          <div class="articles__top">
+            <h4 class="articles__title">ЗНАЕМ ВСЕ О РЮКЗАКАХ</h4>
+            <img src="img/arrow.svg" alt="arrow" />
+          </div>
+          <div class="articles__content">
+            <div class="article">
+              <div class="article__title">Еще две недели!</div>
+              <p class="article__text">
+                Мы гордимся успехами наших клиентов, надеемся вы так же нами
+                гордитесь
+              </p>
+              <div class="article__bottom">
+                <img src="img/ellipse.svg" alt="ellipse" />
+                <div class="article__date">6 фев, 2020</div>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article__title">Еще две недели!</div>
+              <p class="article__text">
+                Мы гордимся успехами наших клиентов, надеемся вы так же нами
+                гордитесь
+              </p>
+              <div class="article__bottom">
+                <img src="img/ellipse.svg" alt="ellipse" />
+                <div class="article__date">6 фев, 2020</div>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article__title">Еще две недели!</div>
+              <p class="article__text">
+                Мы гордимся успехами наших клиентов, надеемся вы так же нами
+                гордитесь
+              </p>
+              <div class="article__bottom">
+                <img src="img/ellipse.svg" alt="ellipse" />
+                <div class="article__date">6 фев, 2020</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="instagram-posts">
+        <div class="instagram-posts__container">
+          <h5 class="instagram-posts__title">ИНСТАГРАМ @HIKE_PROD</h5>
+          <div class="instagram-posts__content">
+            <div class="instagram-posts__column">
+              <img src="img/instagram/post11.png" />
+              <img src="img/instagram/post12.png" />
+            </div>
+            <div class="instagram-posts__column">
+              <img src="img/instagram/post21.png" />
+              <img src="img/instagram/post22.png" />
+            </div>
+            <div class="instagram-posts__column">
+              <img src="img/instagram/post3.png" />
+            </div>
+            <div class="instagram-posts__column">
+              <img src="img/instagram/post41.png" />
+              <img src="img/instagram/post42.png" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Подвал -->
     @@include("chunk/footer.html")
-</body>
+  </body>
 </html>
