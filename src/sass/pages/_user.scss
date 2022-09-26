@@ -4,9 +4,6 @@
 
 .profile {
 
-    &__container {
-    }
-
     &__title {
         @extend .font-title;
     }
@@ -28,18 +25,9 @@
         width: 155px;
     }
 
-    &__options {
-    }
-
     &__option {
         margin-top: 2px;
         @extend .font-card;
-    }
-
-    &__content {
-    }
-
-    &__user-information {
     }
 
     &-form__row {
