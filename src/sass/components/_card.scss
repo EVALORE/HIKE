@@ -5,7 +5,6 @@
     & {
         border: 1px solid $black;
         width: 310px;
-        height: 334px;
     }
 
     &:hover {
@@ -23,6 +22,8 @@
     }
     
     &__information {
+        width: 309px;
+        height: 62px;
         border-top: 1px solid $black;
         @extend .font-card;
         text-align: center;
